@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.MenuPrincipal">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="fondo.jpg" Aspect="AspectFill"/>
+
+            <BoxView Color="#5d9b9b" Opacity="0.8" />
+
+
+                <StackLayout  Padding="90,10">
+                <ImageButton  Source="matematicas.png" Margin="20"  x:Name="btnMatematicas" HeightRequest="120" BackgroundColor="#5d9b9b"  Clicked="btnMatematicas_Clicked" />
+                <ImageButton  Source="animales.jpg" Margin="20" x:Name="btnAnimales" HeightRequest="140" BackgroundColor="#5d9b9b"  Clicked="btnAnimales_Clicked" />
+                <ImageButton  Source="figuras.png" Margin="20" x:Name="btnFiguras" HeightRequest="140" BackgroundColor="#5d9b9b"  Clicked="btnFiguras_Clicked" />
+            </StackLayout>
+
+          
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

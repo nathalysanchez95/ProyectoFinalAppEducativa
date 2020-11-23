@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Figuras">
+    <ContentPage.Content>
+        
+                <!--<WebView x:Name="Video" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></WebView>-->
+                <WebView x:Name="VideoFiguras" HeightRequest="200" WidthRequest="150"/>
+       
+    </ContentPage.Content>
+</ContentPage>

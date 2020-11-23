@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Animales">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="5" Margin="10">
+            <Label Padding="20" Text="Animales de la Selva " HorizontalTextAlignment="Center" FontSize="30" />
+
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+              
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Row="0" Grid.Column="0" Source="leon.png"  WidthRequest="100"  />
+                <Button x:Name="btnSonidoLeon" Grid.Row="0"  Grid.Column="1" Text="Sonido" Clicked="btnSonidoLeon_Clicked" />
+                <Button x:Name="btnVideoLeon" Grid.Row="0"  Grid.Column="2" Text="Video" Clicked="btnVideoLeon_Clicked" />
+             
+
+                <Image Grid.Row="1" Grid.Column="0" Source="elefante.jpg"  WidthRequest="100"  />
+                <Button x:Name="btnSonidoEle" Grid.Row="1"  Grid.Column="1" Text="Sonido" Clicked="btnSonidoEle_Clicked" />
+                <Button x:Name="btnVideoEle" Grid.Row="1"  Grid.Column="2" Text="Video" Clicked="btnVideoEle_Clicked"/>
+               
+
+                <Image Grid.Row="2" Grid.Column="0" Source="jirafa.png"  WidthRequest="100"  />
+                <Button x:Name="btnSonidoJirafa" Grid.Row="2" Grid.Column="1" Text="Sonido"  Clicked="btnSonidoJirafa_Clicked"/>
+                <Button x:Name="btnVideoJirafa" Grid.Row="2"  Grid.Column="2" Text="Video" Clicked="btnVideoJirafa_Clicked"/>
+                       
+
+            </Grid>
+            <WebView x:Name="VideoAnimales" HeightRequest="200" WidthRequest="150"/>
+        </StackLayout>
+    
+    </ContentPage.Content>
+</ContentPage>

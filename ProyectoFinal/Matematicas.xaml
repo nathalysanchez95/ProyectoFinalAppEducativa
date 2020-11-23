@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Matematicas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Padding="20" Text="Cuántos hay? " HorizontalTextAlignment="Center" FontSize="30" />
+
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Row="0" Grid.Column="0" Source="patos.png"  WidthRequest="100"  />
+                <Button x:Name="btnP4" Grid.Row="0" BackgroundColor="LightYellow" Grid.Column="1" Text="4" Clicked="btnP4_Clicked"/>
+                <Button x:Name="btnP1" Grid.Row="0" BackgroundColor="LightYellow" Grid.Column="2" Text="1" Clicked="btnP1_Clicked"/>
+                <Button x:Name="btnP3" Grid.Row="0" BackgroundColor="LightYellow" Grid.Column="3" Text="3" Clicked="btnP3_Clicked"/>
+
+                <Image Grid.Row="1" Grid.Column="0" Source="avion.png"  WidthRequest="100"  />
+                <Button x:Name="btnA2" Grid.Row="1" BackgroundColor="LightPink" Grid.Column="1" Text="2" Clicked="btnA2_Clicked" />
+                <Button x:Name="btnA4" Grid.Row="1" BackgroundColor="LightPink" Grid.Column="2" Text="4" Clicked="btnA4_Clicked"/>
+                <Button x:Name="btnA5" Grid.Row="1" BackgroundColor="LightPink" Grid.Column="3" Text="5" Clicked="btnA5_Clicked"/>
+
+                <Image Grid.Row="2" Grid.Column="0" Source="pelotas.png"  WidthRequest="100"  />
+                <Button x:Name="btnPe7" Grid.Row="2" BackgroundColor="LightBlue" Grid.Column="1" Text="7" Clicked="btnPe7_Clicked"/>
+                <Button x:Name="btnPe8" Grid.Row="2" BackgroundColor="LightBlue" Grid.Column="2" Text="8" Clicked="btnPe8_Clicked"/>
+                <Button x:Name="btnPe9" Grid.Row="2" BackgroundColor="LightBlue" Grid.Column="3" Text="9" Clicked="btnPe9_Clicked"/>
+
+                <Image Grid.Row="3" Grid.Column="0" Source="nave.png"  WidthRequest="100"  />
+                <Button x:Name="btnN3" Grid.Row="3" BackgroundColor="Lavender" Grid.Column="1" Text="3" Clicked="btnN3_Clicked"/>
+                <Button x:Name="btnN6" Grid.Row="3" BackgroundColor="Lavender" Grid.Column="2" Text="6" Clicked="btnN6_Clicked"/>
+                <Button x:Name="btnN5" Grid.Row="3" BackgroundColor="Lavender"  Grid.Column="3" Text="5" Clicked="btnN5_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

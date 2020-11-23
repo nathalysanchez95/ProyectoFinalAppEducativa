@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Registrarse">
+    <ContentPage.Content>
+        
+        <Grid>
+              <Image Source="fondo.jpg" Aspect="AspectFill"/>
+           
+            <BoxView Color="#5d9b9b" Opacity="0.8" />
+
+            <Label Padding="10" Text="Registro de Estudiantes" HorizontalTextAlignment="Center" FontSize="30" />
+                       
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                
+
+                <StackLayout Grid.Row="1" Padding="20,40">
+                    <Entry Placeholder="Ingrese su Nombre" PlaceholderColor="White" x:Name="txtNombre"/>
+                    <Entry Placeholder="Ingrese su Apellido" PlaceholderColor="White" x:Name="txtApellido"/>
+                    <Entry Placeholder="Ingrese un usuario" PlaceholderColor="White" x:Name="txtUsuario" />
+                    <Entry Placeholder="Ingrese una contraseña" PlaceholderColor="White" x:Name="txtPass" IsPassword="True"/>
+                    <Button Text="Registrarse" BackgroundColor="White" BorderRadius ="20" TextColor="#5d9b9b" x:Name="btnRegistrarse" Clicked="btnRegistrarse_Clicked"/>
+
+                  </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
